@@ -4,6 +4,10 @@ def odd_sum(num)
   return y
 end
 
-puts odd_sum(10)
-puts odd_sum(1)
+def odd2(num)
+((1..num).map{ |n| n if n.odd?}).compact.sum
+end
 
+puts odd_sum(10)
+p odd2(10)
+puts odd2(1)
